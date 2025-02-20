@@ -9,6 +9,7 @@ services:
     volumes:
       - ./db-migrate/init.sql:/docker-entrypoint-initdb.d/init.sql
       - pgdata:/var/lib/postgresql/data
+
   dbeaver:
     image: dbeaver/cloudbeaver:24.1.5
     ports:
@@ -19,8 +20,9 @@ services:
     volumes:
       - dbeaver-data:/data
       - dbeaver-plugins:/plugins
+
   server:
-    build: 
+    build:
       context: .
       dockerfile: ./server/Dockerfile
     ports:
@@ -29,6 +31,9 @@ services:
       DATABASE_URL: postgres://your_user:your_password@postgres:5432/your_database
     depends_on:
       - postgres
+    volumes:
+      - ./server/configuration.json:/app/server/configuration.json # Added volume for configuration.json
+
 volumes:
   pgdata:
   dbeaver-data:

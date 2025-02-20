@@ -6,6 +6,42 @@ info:
 servers:
   - url: http://localhost:8000
 paths:
+  /change-welcome-message:
+    post:
+      summary: Change the welcome message
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+                  example: "New welcome message"
+              required:
+                - message
+      responses:
+        '200':
+          description: Welcome message changed successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Welcome message changed"
+        '400':
+          description: Bad request, message is required
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: "Message is required"
   /health:
     get:
       summary: Health check endpoint

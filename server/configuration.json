@@ -1,4 +1,4 @@
 {
   "port": 8000,
-  "welcomeMessage": "Welcome to our server"
+  "welcomeMessage": "Welcome message"
 }

@@ -7,6 +7,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import configuration from './configuration.json' with { type: "json" };
+import { updateConfig } from './updateConfig.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -34,7 +35,14 @@ const swaggerSpec = swaggerJsdoc(swaggerOptions);
 app.use(json());
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
-
+app.post("/change-welcome-message", (req, res) => {
+  const { message } = req.body;
+  if(!message) {
+    return res.status(400).json({ error: "Message is required"});
+  }
+  updateConfig(message)
+  res.json({ message: "Welcome message changed" });
+});
 app.get("/health", async (req, res) => {
   try {
     await pool.query("SELECT 1");
