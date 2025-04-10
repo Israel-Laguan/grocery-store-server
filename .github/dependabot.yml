@@ -6,8 +6,13 @@ updates:
       interval: "monthly" 
       time: "04:00"
     open-pull-requests-limit: 10
-    ignore:
-      - dependency-name: "typescript"
+    allow:
+      - dependency-name: "express"
+      - dependency-name: "pg" 
+      - dependency-name: "postgrator-cli"
+      - dependency-name: "swagger-jsdoc"
+      - dependency-name: "swagger-ui-express" 
+      - dependency-name: "yaml" 
 
   - package-ecosystem: "github-actions"
     directory: "/"
