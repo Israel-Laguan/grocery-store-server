@@ -36,10 +36,11 @@
 2. [Features](#features)
 3. [Prerequisites](#prerequisites)
 4. [Getting Started](#getting-started)
-5. [Author](#author)
-6. [Contributing](#contributing)
-7. [Show your support](#show-your-support)
-8. [License](#license)
+5. [API Testing](#api-testing)
+6. [Author](#author)
+7. [Contributing](#contributing)
+8. [Show your support](#show-your-support)
+9. [License](#license)
 
 # The Project
 
@@ -56,10 +57,10 @@ The Grocery Store Server project provides a backend service for managing grocery
 
 Before running the project, ensure you have the following installed on your machine:
 
-- 🟢 Node.js (v14 or higher)
-- 📦 npm (Node Package Manager)
-- 🗃️ PostgreSql (or any configured database)
-- 🐳 Docker
+- 🟢 [Node.js](https://nodejs.org/) (v14 or higher)
+- 📦 [npm](https://www.npmjs.com/)
+- 🗃️ [PostgreSQL](https://www.postgresql.org/)
+- 🐳 [Docker](https://www.docker.com/)
 
 # Getting Started
 
@@ -71,19 +72,65 @@ To get a local copy up and running, follow these simple steps:
    ```
 
 2. **Install dependencies**
+  This project uses npm for dependency management. Ensure you have Node.js ≥ 14 installed.
    ```bash
    npm install
    ```
 
-3. **Create the container and star the server**
+3. **Create the container**
+  This project is containerized using Docker and orchestrated via docker-compose. The default configuration sets up both the API server and a PostgreSQL database.
     ```bash
     docker-compose up
     ```
 
-The server will start on http://localhost:8000 
+4. **Run migrations and seed data (inside the container)**
+  
+    The PostgreSQL service is defined in the docker-compose.yml file as postgres, meaning it is only resolvable within the Docker network created by docker-compose. Therefore, to execute the migration and seeding commands, you must do so from the server container.
+    First, access the server container:
+    ```bash
+    docker exec -it grocery-store-server-server-1 sh
+    ```
+    Then, run the migration command to create the required tables:
 
+    ```bash
+    npm run migrate
+    ```
+    And seed the database with sample data:
+
+    ```bash
+    npm run seed
+    ```
+
+Once the server is up and running, you can verify its health by visiting: 
+```bash
+http://localhost:8000 
+```
 You can use http://localhost:8000/health to check the connection status.
 <p align="center"> <img src="docs/images/api-test-interface.png" alt="API Testing Screenshot" width="800"/> </p>
+
+# API Testing
+To validate the functionality of the API endpoints, a series of HTTP requests have been pre-configured and tested using Postman. These tests cover:
+
+User endpoints (authentication, registration, role management)
+
+```bash
+http://localhost:8000/users
+```
+<p align="center">
+ <img src="docs/images/api-test-users.png" alt="API Test Users" width="800"/> </p> 
+
+Product endpoints (CRUD operations)
+```bash
+http://localhost:8000/products
+```
+ <p align="center"> <img src="docs/images/api-test-products.png" alt="API Test Products" width="800"/> </p> 
+
+Purchase endpoints (order processing and inventory adjustments)
+
+```bash
+http://localhost:8000/buys
+```
+ <p align="center"> <img src="docs/images/api-test-buys.png" alt="API Test Buys" width="800"/> </p>
 
 # Author
 
