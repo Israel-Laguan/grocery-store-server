@@ -37,10 +37,11 @@
 3. [Prerequisites](#prerequisites)
 4. [Getting Started](#getting-started)
 5. [API Testing](#api-testing)
-6. [Author](#author)
-7. [Contributing](#contributing)
-8. [Show your support](#show-your-support)
-9. [License](#license)
+6. [API Documentation](#apidocumentation)
+7. [Author](#author)
+8. [Contributing](#contributing)
+9. [Show your support](#show-your-support)
+10. [License](#license)
 
 # The Project
 
@@ -132,6 +133,13 @@ http://localhost:8000/buys
 ```
  <p align="center"> <img src="docs/images/api-test-buys.png" alt="API Test Buys" width="800"/> </p>
 
+# API Documentation
+
+You can access the full API documentation by visiting the following URL in your browser:
+
+```bash
+http://localhost:8000/api-docs
+```
 # Author
 
 <table style="width:100%"> <tr> <td> <div align="center"> <a href="./docs/img/photo.png" target="_blank" rel="author"> <img src="https://avatars2.githubusercontent.com/u/36519478?s=460&v=4" style="border-radius: 10%; min-width: 100px;" alt="Israel Laguan's Photo" width="200px"> </a> <h2> <a href="https://israel-laguan.github.io/" target="_blank" rel="author"> Israel Laguan </a> </h2> </div> </td> <td> <div align="center"> <a href="mailto:israellaguan@gmail.com" target="_blank" rel="author"> <img src="https://img.icons8.com/color/48/000000/message-squared.png" style="border-radius: 10%" alt="My GitHub" height="45px"> <h3> Email me to <a href="mailto:israellaguan@gmail.com"> israellaguan@gmail.com </a> </h3> </a> <a href="https://www.linkedin.com/in/israellaguan/" target="_blank" rel="author"> <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="My Linkedin" height="45px"> <h3> Connect to my Linkedin </h3> </a> <a href="https://github.com/Israel-Laguan" target="_blank" rel="author"> <img src="https://img.icons8.com/color/48/000000/github--v1.png" style="border-radius: 10%" alt="My GitHub" height="45px" > <h3> Check my GitHub Profile </h3> </a> </div> </td> </tr> </table>
@@ -166,11 +174,11 @@ Feel free to fork this project and improve it
 [forks-shield]: https://img.shields.io/github/forks/Israel-Laguan/grocery-store-server?style=for-the-badge
 [forks-url]: https://github.com/Israel-Laguan/grocery-store-server/network/members
 [stars-shield]: https://img.shields.io/github/stars/Israel-Laguan/grocery-store-server?style=for-the-badge
-[stars-url]: https://github.com/Israel-Laguan/<repo>/stargazers
+[stars-url]: https://github.com/Israel-Laguan/grocery-store-server/stargazers
 [issues-open-shield]: https://img.shields.io/github/issues/Israel-Laguan/grocery-store-server?style=for-the-badge
 [issues-url]: https://github.com/Israel-Laguan/grocery-store-server/issues
 [issues-closed-shield]: https://img.shields.io/github/issues-closed/Israel-Laguan/grocery-store-server?style=for-the-badge
-[badge-framework]: https://img.shields.io/badge/framework-here-9cf?style=for-the-badge
-[framework-url]: https://google.com
+[badge-framework]: https://img.shields.io/badge/framework-Express-9cf?style=for-the-badge
+[framework-url]: https://expressjs.com
 [contributions-welcome]: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge
 [badge-license]: https://img.shields.io/:license-mit-blue.svg?style=for-the-badge
