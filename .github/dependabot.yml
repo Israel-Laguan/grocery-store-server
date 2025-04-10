@@ -1,0 +1,20 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly" 
+      time: "04:00"
+    open-pull-requests-limit: 10
+    allow:
+      - dependency-name: "express"
+      - dependency-name: "pg" 
+      - dependency-name: "postgrator-cli"
+      - dependency-name: "swagger-jsdoc"
+      - dependency-name: "swagger-ui-express" 
+      - dependency-name: "yaml" 
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
