@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "pg": "^8.7.1",
+    "flatted": "^3.3.3",
+    "pg": "^8.14.1",
     "postgrator-cli": "8.1.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",

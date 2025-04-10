@@ -1,3 +1,4 @@
+CREATE DATABASE your_database;
 -- Create user and grant privileges
 CREATE USER your_user WITH PASSWORD 'your_password';
 GRANT ALL PRIVILEGES ON DATABASE your_database TO your_user;
