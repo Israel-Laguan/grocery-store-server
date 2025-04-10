@@ -144,12 +144,9 @@ http://localhost:8000/api-docs
 
 <table style="width:100%"> <tr> <td> <div align="center"> <a href="./docs/img/photo.png" target="_blank" rel="author"> <img src="https://avatars2.githubusercontent.com/u/36519478?s=460&v=4" style="border-radius: 10%; min-width: 100px;" alt="Israel Laguan's Photo" width="200px"> </a> <h2> <a href="https://israel-laguan.github.io/" target="_blank" rel="author"> Israel Laguan </a> </h2> </div> </td> <td> <div align="center"> <a href="mailto:israellaguan@gmail.com" target="_blank" rel="author"> <img src="https://img.icons8.com/color/48/000000/message-squared.png" style="border-radius: 10%" alt="My GitHub" height="45px"> <h3> Email me to <a href="mailto:israellaguan@gmail.com"> israellaguan@gmail.com </a> </h3> </a> <a href="https://www.linkedin.com/in/israellaguan/" target="_blank" rel="author"> <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="My Linkedin" height="45px"> <h3> Connect to my Linkedin </h3> </a> <a href="https://github.com/Israel-Laguan" target="_blank" rel="author"> <img src="https://img.icons8.com/color/48/000000/github--v1.png" style="border-radius: 10%" alt="My GitHub" height="45px" > <h3> Check my GitHub Profile </h3> </a> </div> </td> </tr> </table>
 
-
-
 # Contributing
 
 [![contributions welcome][contributions-welcome]][issues-url]
-
 
 <img src="https://user-images.githubusercontent.com/74038190/216120981-b9507c36-0e04-4469-8e27-c99271b45ba5.png" alt="Handshake" width="20" /> Contributions, issues and feature requests are welcome! Feel free to check the <a href="https://github.com/Israel-Laguan/grocery-store-server/blob/main/CONTRIBUTING.md">Issues pages</a> 
 
@@ -158,8 +155,6 @@ http://localhost:8000/api-docs
 🤗 Give a ⭐️ if you like this project!
 
 <img src="https://user-images.githubusercontent.com/74038190/216122041-518ac897-8d92-4c6b-9b3f-ca01dcaf38ee.png" alt="Fire" width="120" />
-
-
 
 # License
 
