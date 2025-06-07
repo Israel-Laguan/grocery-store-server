@@ -13,6 +13,6 @@
     "postgrator-cli": "9.0.1",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
-    "yaml": "^2.7.1"
+    "yaml": "^2.8.0"
   }
 }
